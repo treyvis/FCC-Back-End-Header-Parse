@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/treyvis/FCC-Back-End-Header-Parse/issues"
   },
-  "homepage": "https://github.com/treyvis/FCC-Back-End-Header-Parse#readme"
+  "homepage": "https://github.com/treyvis/FCC-Back-End-Header-Parse#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
