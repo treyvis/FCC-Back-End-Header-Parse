@@ -1,13 +1,17 @@
 const express = require('express');
 const app = express();
+const port = 4040;
 
 app.get('/', (req,res) => {
 	const info = {
-		language: req.headers['accept-language'].match(/.*,/)[0],
-		software: req.headers['user-agent'].match(/\(.*\)/)[0]
+		ip: req.ip,
+		language: req.headers['accept-language'].match(/.*,/)[0].replace(/,/,''),
+		software: req.headers['user-agent'].match(/\(.*\)/)[0].replace(/[\(\)]/g,'')
 	};
-	res.send(info);
-
+	console.log('Sent JSON: ' + JSON.stringify(info));
+	res.json(info);
 });
 
-app.listen(4040);
+app.listen(port, () => {
+	console.log('Listening on port: ' + port);
+});
