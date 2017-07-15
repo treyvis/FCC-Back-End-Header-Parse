@@ -4,7 +4,7 @@ const port = 4040;
 
 app.get('/', (req,res) => {
 	const info = {
-		ip: req.ip,
+		ip: req.ip.match(/\d.*\d/)[0],
 		language: req.headers['accept-language'].match(/.*,/)[0].replace(/,/,''),
 		software: req.headers['user-agent'].match(/\(.*\)/)[0].replace(/[\(\)]/g,'')
 	};
