@@ -1,0 +1,19 @@
+{
+  "name": "headerparsermicroservice",
+  "version": "1.0.0",
+  "description": "FCC Back-End Hader Parser Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treyvis/FCC-Back-End-Header-Parse.git"
+  },
+  "author": "Trey Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/treyvis/FCC-Back-End-Header-Parse/issues"
+  },
+  "homepage": "https://github.com/treyvis/FCC-Back-End-Header-Parse#readme"
+}
